@@ -7,9 +7,7 @@
 html {
   font-family: 'Roboto Slab', sans-serif;
   line-height: 1.5;
-
   color: #ebe7ef;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -347,5 +345,57 @@ ol {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust the base font size for smaller screens */
+  }
+
+  header img {
+    width: 6rem; /* Adjust the logo size for smaller screens */
+    margin: 2rem auto 0.5rem auto;
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust the header font size for smaller screens */
+    margin-bottom: 2rem;
+  }
+
+  #game-container {
+    max-width: 100%; /* Make the game container take full width on smaller screens */
+    margin: 1rem; /* Add some margin for better spacing */
+  }
+
+  #players li {
+    width: 100%; /* Make player boxes take full width on smaller screens */
+  }
+
+  #players button {
+    width: 2.5rem; /* Adjust the button size for smaller screens */
+    font-size: 0.8rem; /* Adjust the font size for smaller screens */
+  }
+
+  .player-name {
+    width: 8rem; /* Adjust the player name width for smaller screens */
+    font-size: 0.8rem; /* Adjust the player name font size for smaller screens */
+  }
+
+  .player input {
+    width: 8rem; /* Adjust the player input width for smaller screens */
+    font-size: 0.8rem; /* Adjust the player input font size for smaller screens */
+  }
+
+  .player-symbol {
+    font-size: 0.8rem; /* Adjust the player symbol font size for smaller screens */
+  }
+
+  #game-board button {
+    width: 6rem; /* Adjust the button size for smaller screens */
+    height: 6rem; /* Adjust the button height for smaller screens */
+    font-size: 4rem; /* Adjust the font size for smaller screens */
   }
 }
